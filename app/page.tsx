@@ -91,29 +91,72 @@ export default async function Home() {
 
           <section id="skills" className="border-y border-zinc-900 bg-zinc-950/40 px-10 py-24 md:px-24">
             <AnimatedSection delay={0.05} direction="up">
-              <h2 className="mb-12 text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">Core Expertise</h2>
+              <div className="mb-14 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">Core Expertise</p>
+                  <h3 className="mt-4 text-3xl font-extrabold leading-tight md:text-5xl">Crafted for speed, scale, and elegant UX.</h3>
+                </div>
+                <p className="max-w-md text-sm text-zinc-400">
+                  End-to-end product development across frontend, backend, cloud, and design systems.
+                </p>
+              </div>
             </AnimatedSection>
 
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-              <AnimatedSection className="glass rounded-2xl p-8 hover:-translate-y-1" delay={0.1} direction="up">
-                <div className="mb-4 inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase text-blue-500">Frontend</div>
-                <h4 className="mb-2 text-xl font-bold">Modern Interfaces</h4>
-                <p className="text-sm text-zinc-500">React, Next.js, Framer Motion, Tailwind CSS</p>
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              <AnimatedSection className="glass rounded-3xl p-8 hover:-translate-y-1" delay={0.1} direction="up">
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-blue-500/30 bg-blue-500/10">
+                    <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
+                  </span>
+                  <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Frontend</div>
+                </div>
+                <h4 className="mb-2 text-2xl font-bold">Modern Interfaces</h4>
+                <p className="mb-4 text-sm text-zinc-500">React, Next.js, Framer Motion, Tailwind CSS</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                  <div className="h-1 w-[88%] rounded-full bg-blue-500" />
+                </div>
               </AnimatedSection>
-              <AnimatedSection className="glass rounded-2xl p-8 hover:-translate-y-1" delay={0.15} direction="up">
-                <div className="mb-4 inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase text-blue-500">Backend</div>
-                <h4 className="mb-2 text-xl font-bold">Reliable APIs</h4>
-                <p className="text-sm text-zinc-500">Node.js, Go, PostgreSQL, Redis, Prisma</p>
+
+              <AnimatedSection className="glass rounded-3xl p-8 hover:-translate-y-1" delay={0.15} direction="up">
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-blue-500/30 bg-blue-500/10">
+                    <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
+                  </span>
+                  <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Backend</div>
+                </div>
+                <h4 className="mb-2 text-2xl font-bold">Reliable APIs</h4>
+                <p className="mb-4 text-sm text-zinc-500">Node.js, Go, PostgreSQL, Redis, Prisma</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                  <div className="h-1 w-[92%] rounded-full bg-blue-500" />
+                </div>
               </AnimatedSection>
-              <AnimatedSection className="glass rounded-2xl p-8 hover:-translate-y-1" delay={0.2} direction="up">
-                <div className="mb-4 inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase text-blue-500">Cloud</div>
-                <h4 className="mb-2 text-xl font-bold">Scalable Deployments</h4>
-                <p className="text-sm text-zinc-500">Vercel, AWS, Docker, Kubernetes</p>
+
+              <AnimatedSection className="glass rounded-3xl p-8 hover:-translate-y-1" delay={0.2} direction="up">
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-blue-500/30 bg-blue-500/10">
+                    <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
+                  </span>
+                  <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Cloud</div>
+                </div>
+                <h4 className="mb-2 text-2xl font-bold">Scalable Deployments</h4>
+                <p className="mb-4 text-sm text-zinc-500">Vercel, AWS, Docker, Kubernetes</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                  <div className="h-1 w-[86%] rounded-full bg-blue-500" />
+                </div>
               </AnimatedSection>
-              <AnimatedSection className="glass rounded-2xl p-8 hover:-translate-y-1" delay={0.25} direction="up">
-                <div className="mb-4 inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase text-blue-500">Design</div>
-                <h4 className="mb-2 text-xl font-bold">UX & Motion</h4>
-                <p className="text-sm text-zinc-500">Figma, Adobe UI/UX, Motion Design</p>
+
+              <AnimatedSection className="glass rounded-3xl p-8 hover:-translate-y-1" delay={0.25} direction="up">
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-blue-500/30 bg-blue-500/10">
+                    <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
+                  </span>
+                  <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Design</div>
+                </div>
+                <h4 className="mb-2 text-2xl font-bold">UX & Motion</h4>
+                <p className="mb-4 text-sm text-zinc-500">Figma, Adobe UI/UX, Motion Design</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                  <div className="h-1 w-[84%] rounded-full bg-blue-500" />
+                </div>
               </AnimatedSection>
             </div>
           </section>
