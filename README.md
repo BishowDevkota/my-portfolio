@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio (Next.js + MongoDB)
 
-## Getting Started
+Full-stack developer portfolio built with Next.js App Router, TypeScript, MongoDB (Mongoose), Tailwind CSS, JWT auth, and local image storage in `/public`.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Dark-first black/white minimal UI with light mode toggle
+- Sticky navbar, smooth scrolling, responsive sections
+- Public pages: Home, Projects, Blog listing, Blog details (`/blog/[slug]`)
+- Admin auth with JWT in HTTP-only cookies
+- Protected admin routes:
+	- `/admin/login`
+	- `/admin/dashboard`
+	- `/admin/projects`
+	- `/admin/blog`
+- Full CRUD APIs for Projects and Blog
+- Local image upload + cleanup (`/public/projects`, `/public/blog`)
+- Image validation (type + max size)
+
+## Environment Variables
+
+Create `.env.local` (or copy from `.env.example`) with:
+
+```env
+MONGODB_URI=mongodb://127.0.0.1:27017
+MONGODB_DB=portfolio
+JWT_SECRET=replace-with-a-strong-secret
+
+# First admin bootstrap credentials
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin12345
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open `http://localhost:3000`.
 
-## Learn More
+## Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Endpoints
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Auth
+- `POST /api/login`
+- `POST /api/logout`
 
-## Deploy on Vercel
+### Projects
+- `GET /api/projects`
+- `POST /api/projects`
+- `PUT /api/projects/:id`
+- `DELETE /api/projects/:id`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Blog
+- `GET /api/blog`
+- `POST /api/blog`
+- `PUT /api/blog/:id`
+- `DELETE /api/blog/:id`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+
+- Uploaded files are uniquely renamed with timestamp + original filename.
+- On update/delete of Project or Blog, old images are removed from `/public`.
+- Admin user auto-creates on first valid login if not found and env bootstrap credentials match.
