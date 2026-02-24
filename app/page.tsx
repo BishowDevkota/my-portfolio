@@ -35,7 +35,7 @@ export default async function Home() {
 
               <AnimatedSection delay={0.1} direction="up">
                 <h1 className="text-5xl font-extrabold leading-none tracking-tighter md:text-8xl">
-                  BISHOW <br /> <span className="text-zinc-500">DEVKOTA</span>
+                  BISHOW <br /> <span className="text-zinc-500 light:text-zinc-700">DEVKOTA</span>
                 </h1>
               </AnimatedSection>
 
@@ -72,31 +72,31 @@ export default async function Home() {
               <AnimatedSection className="md:col-span-2" delay={0.1} direction="right">
                 <h2 className="mb-4 text-xs font-bold uppercase tracking-widest text-blue-500">The Developer</h2>
                 <h3 className="mb-6 text-4xl font-extrabold leading-tight md:text-5xl">Engineering Scalable Web Solutions.</h3>
-                <p className="mb-6 text-lg leading-relaxed text-zinc-400">
+                <p className="mb-6 text-lg leading-relaxed text-zinc-400 light:text-zinc-600">
                   I am a Full-Stack developer based in NYC with a passion for the Next.js ecosystem. I bridge the gap between complex backend logic and fluid frontend motion to create products that scale.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="glass rounded-2xl p-6">
                     <h4 className="text-2xl font-bold">5+</h4>
-                    <p className="text-xs uppercase text-zinc-500">Years Experience</p>
+                    <p className="text-xs uppercase text-zinc-500 light:text-zinc-600">Years Experience</p>
                   </div>
                   <div className="glass rounded-2xl p-6">
                     <h4 className="text-2xl font-bold">40+</h4>
-                    <p className="text-xs uppercase text-zinc-500">Projects Completed</p>
+                    <p className="text-xs uppercase text-zinc-500 light:text-zinc-600">Projects Completed</p>
                   </div>
                 </div>
               </AnimatedSection>
             </div>
           </section>
 
-          <section id="skills" className="border-y border-zinc-900 bg-zinc-950/40 px-10 py-24 md:px-24">
+          <section id="skills" className="border-y border-zinc-900 bg-zinc-950/40 px-10 py-24 light:border-zinc-200 light:bg-zinc-100/60 md:px-24">
             <AnimatedSection delay={0.05} direction="up">
               <div className="mb-14 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">Core Expertise</p>
                   <h3 className="mt-4 text-3xl font-extrabold leading-tight md:text-5xl">Crafted for speed, scale, and elegant UX.</h3>
                 </div>
-                <p className="max-w-md text-sm text-zinc-400">
+                <p className="max-w-md text-sm text-zinc-400 light:text-zinc-600">
                   End-to-end product development across frontend, backend, cloud, and design systems.
                 </p>
               </div>
@@ -111,8 +111,8 @@ export default async function Home() {
                   <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Frontend</div>
                 </div>
                 <h4 className="mb-2 text-2xl font-bold">Modern Interfaces</h4>
-                <p className="mb-4 text-sm text-zinc-500">React, Next.js, Framer Motion, Tailwind CSS</p>
-                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                <p className="mb-4 text-sm text-zinc-500 light:text-zinc-600">React, Next.js, Framer Motion, Tailwind CSS</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80 light:bg-zinc-300">
                   <div className="h-1 w-[88%] rounded-full bg-blue-500" />
                 </div>
               </AnimatedSection>
@@ -125,8 +125,8 @@ export default async function Home() {
                   <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Backend</div>
                 </div>
                 <h4 className="mb-2 text-2xl font-bold">Reliable APIs</h4>
-                <p className="mb-4 text-sm text-zinc-500">Node.js, Go, PostgreSQL, Redis, Prisma</p>
-                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                <p className="mb-4 text-sm text-zinc-500 light:text-zinc-600">Node.js, Go, PostgreSQL, Redis, Prisma</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80 light:bg-zinc-300">
                   <div className="h-1 w-[92%] rounded-full bg-blue-500" />
                 </div>
               </AnimatedSection>
@@ -139,8 +139,8 @@ export default async function Home() {
                   <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Cloud</div>
                 </div>
                 <h4 className="mb-2 text-2xl font-bold">Scalable Deployments</h4>
-                <p className="mb-4 text-sm text-zinc-500">Vercel, AWS, Docker, Kubernetes</p>
-                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                <p className="mb-4 text-sm text-zinc-500 light:text-zinc-600">Vercel, AWS, Docker, Kubernetes</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80 light:bg-zinc-300">
                   <div className="h-1 w-[86%] rounded-full bg-blue-500" />
                 </div>
               </AnimatedSection>
@@ -153,8 +153,8 @@ export default async function Home() {
                   <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">Design</div>
                 </div>
                 <h4 className="mb-2 text-2xl font-bold">UX & Motion</h4>
-                <p className="mb-4 text-sm text-zinc-500">Figma, Adobe UI/UX, Motion Design</p>
-                <div className="h-1 w-full rounded-full bg-zinc-800/80">
+                <p className="mb-4 text-sm text-zinc-500 light:text-zinc-600">Figma, Adobe UI/UX, Motion Design</p>
+                <div className="h-1 w-full rounded-full bg-zinc-800/80 light:bg-zinc-300">
                   <div className="h-1 w-[84%] rounded-full bg-blue-500" />
                 </div>
               </AnimatedSection>
@@ -189,10 +189,10 @@ export default async function Home() {
                       ))}
                     </div>
                     <h3 className="mb-4 text-4xl font-extrabold">{project.title}</h3>
-                    <p className="mb-8 text-lg text-zinc-400">{project.description}</p>
+                    <p className="mb-8 text-lg text-zinc-400 light:text-zinc-600">{project.description}</p>
                     <div className="flex gap-6">
                       <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="border-b border-blue-500 pb-1 text-sm font-bold">LIVE DEMO</a>
-                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="border-b border-zinc-500 pb-1 text-sm font-bold">GITHUB REPO</a>
+                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="border-b border-zinc-500 pb-1 text-sm font-bold light:border-zinc-700">GITHUB REPO</a>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -208,7 +208,7 @@ export default async function Home() {
             </div>
           </section>
 
-          <section id="blog" className="bg-zinc-950/20 px-10 py-32 md:px-24">
+          <section id="blog" className="bg-zinc-950/20 px-10 py-32 light:bg-zinc-100/60 md:px-24">
             <AnimatedSection delay={0.05} direction="up">
               <h2 className="mb-12 text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">Latest Insights</h2>
             </AnimatedSection>
@@ -225,8 +225,8 @@ export default async function Home() {
                   <div className="p-8">
                     <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-blue-500">{blog.slug.replace(/-/g, " ")}</p>
                     <h4 className="mb-4 text-xl font-bold">{blog.title}</h4>
-                    <p className="mb-6 text-sm text-zinc-500">{blog.excerpt}</p>
-                    <Link href={`/blog/${blog.slug}`} className="border-b border-white pb-1 text-xs font-bold uppercase">Read Article</Link>
+                    <p className="mb-6 text-sm text-zinc-500 light:text-zinc-600">{blog.excerpt}</p>
+                    <Link href={`/blog/${blog.slug}`} className="border-b border-white pb-1 text-xs font-bold uppercase light:border-zinc-800">Read Article</Link>
                   </div>
                 </AnimatedSection>
               ))}
@@ -241,24 +241,24 @@ export default async function Home() {
             </AnimatedSection>
           </section>
 
-          <footer id="contact" className="border-t border-zinc-900 px-10 py-32 text-center md:px-24">
+          <footer id="contact" className="border-t border-zinc-900 px-10 py-32 text-center light:border-zinc-200 md:px-24">
             <div className="blob" style={{ bottom: "-10%", right: "-10%" }} />
             <AnimatedSection delay={0.05} direction="up">
               <h2 className="mb-12 text-5xl font-extrabold tracking-tighter md:text-8xl">LET'S CONNECT.</h2>
             </AnimatedSection>
             <AnimatedSection delay={0.1} direction="up">
-              <a href="mailto:hello@dev.com" className="inline-block border-b-2 border-zinc-800 pb-2 text-2xl italic font-light transition hover:border-white md:text-4xl">
-                hello@nextportfolio.com
+              <a href="mailto:bishow8848@gmail.com" className="inline-block border-b-2 border-zinc-800 pb-2 text-2xl italic font-light transition hover:border-white light:border-zinc-300 light:hover:border-zinc-700 md:text-4xl">
+                bishow8848@gmail.com
               </a>
             </AnimatedSection>
 
-            <div className="mt-32 rounded-2xl border border-zinc-900 bg-zinc-950/60 px-6 py-8 md:px-10">
+            <div className="mt-32 rounded-2xl border border-zinc-900 bg-zinc-950/60 px-6 py-8 light:border-zinc-200 light:bg-white/80 md:px-10">
               <div className="flex flex-col items-center justify-between text-[10px] uppercase tracking-[0.3em] text-zinc-600 md:flex-row">
                 <p>© 2026 BISHOW DEVKOTA — ALL RIGHTS RESERVED</p>
                 <div className="mt-6 flex gap-8 md:mt-0">
-                  <a href="#" className="transition hover:text-white">LinkedIn</a>
-                  <a href="#" className="transition hover:text-white">GitHub</a>
-                  <a href="#" className="transition hover:text-white">Twitter</a>
+                  <a href="#" className="transition hover:text-white light:hover:text-zinc-900">LinkedIn</a>
+                  <a href="#" className="transition hover:text-white light:hover:text-zinc-900">GitHub</a>
+                  <a href="#" className="transition hover:text-white light:hover:text-zinc-900">Twitter</a>
                 </div>
               </div>
             </div>

@@ -13,8 +13,8 @@ const techStack = [
 
 export default function InfiniteTechSlider() {
   return (
-    <div className="py-10 border-y border-zinc-900 overflow-hidden bg-black/50">
-      <motion.div className="logos-slide flex w-max items-center gap-20 whitespace-nowrap grayscale opacity-50">
+    <div className="py-10 border-y border-zinc-900 overflow-hidden bg-black/50 light:border-zinc-200 light:bg-zinc-100/70">
+      <motion.div className="logos-slide flex w-max items-center gap-20 whitespace-nowrap grayscale opacity-50 light:opacity-70">
         {[...techStack, ...techStack, ...techStack].map((tech, index) => (
           <span key={`${tech}-${index}`} className="text-2xl font-bold">
             {tech}
