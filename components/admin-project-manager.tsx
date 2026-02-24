@@ -162,7 +162,7 @@ export function AdminProjectManager() {
             <p className="mt-2 text-sm text-zinc-400 light:text-zinc-600">{project.description}</p>
             {project.isFeatured && (
               <p className="mt-2 inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-500">
-                Featured on Home
+                Featured on Home page
               </p>
             )}
             <div className="mt-4 flex gap-2">
