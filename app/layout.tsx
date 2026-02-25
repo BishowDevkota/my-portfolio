@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description: "Modern full-stack developer portfolio with project and blog management.",
   icons: {
     icon: "/logo.png",
+    favicon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
