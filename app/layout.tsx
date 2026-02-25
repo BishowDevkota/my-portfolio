@@ -13,6 +13,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Developer Portfolio",
   description: "Modern full-stack developer portfolio with project and blog management.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Developer Portfolio",
     description: "Modern full-stack developer portfolio with project and blog management.",

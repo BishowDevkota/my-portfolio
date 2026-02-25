@@ -28,11 +28,16 @@ body {
   color: var(--foreground);
   font-family: var(--font-plus-jakarta), system-ui, sans-serif;
   transition: background-color 250ms ease, color 250ms ease;
-  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
@@ -69,15 +74,16 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-/* Blob backgrounds */
+/* Blob backgrounds — use viewport-clamped size so they never exceed the screen */
 .blob {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: min(500px, 80vw);
+  height: min(500px, 80vw);
   background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
   border-radius: 50%;
   z-index: -1;
   filter: blur(60px);
+  pointer-events: none;
 }
 
 @keyframes scroll {

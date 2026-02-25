@@ -17,13 +17,13 @@ export default async function Home() {
   return (
     <>
       <Preloader />
-      <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <div className="min-h-screen bg-background text-foreground">
         <Navbar />
 
-        <main>
+        <main className="relative overflow-clip">
           <div className="blob" style={{ top: "-10%", left: "-10%" }} />
 
-          <section className="relative flex h-screen flex-col justify-center overflow-hidden px-10 md:px-24">
+          <section className="relative flex h-screen flex-col justify-center overflow-hidden px-4 sm:px-10 md:px-24">
             <HeroVideo />
             <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/25 to-black/45 light:from-white/70 light:via-white/45 light:to-white/70" />
             <div className="absolute inset-0 bg-black/10 light:bg-white/10" />
@@ -57,7 +57,7 @@ export default async function Home() {
 
           <InfiniteTechSlider />
 
-          <section id="about" className="px-10 py-32 md:px-24">
+          <section id="about" className="px-4 py-32 sm:px-10 md:px-24">
             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-3">
               <AnimatedSection className="md:col-span-1" delay={0.05} direction="left">
                 <div className="glass rounded-3xl p-2 rotate-3 transition duration-500 hover:rotate-0">
@@ -89,7 +89,7 @@ export default async function Home() {
             </div>
           </section>
 
-          <section id="skills" className="border-y border-zinc-900 bg-zinc-950/40 px-10 py-24 light:border-zinc-200 light:bg-zinc-100/60 md:px-24">
+          <section id="skills" className="border-y border-zinc-900 bg-zinc-950/40 px-4 py-24 light:border-zinc-200 light:bg-zinc-100/60 sm:px-10 md:px-24">
             <AnimatedSection delay={0.05} direction="up">
               <div className="mb-14 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                 <div>
@@ -161,7 +161,7 @@ export default async function Home() {
             </div>
           </section>
 
-          <section id="projects" className="px-10 py-32 md:px-24">
+          <section id="projects" className="px-4 py-32 sm:px-10 md:px-24">
             <AnimatedSection delay={0.05} direction="up">
               <h2 className="mb-12 text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">Selected Works</h2>
             </AnimatedSection>
@@ -208,7 +208,7 @@ export default async function Home() {
             </div>
           </section>
 
-          <section id="blog" className="bg-zinc-950/20 px-10 py-32 light:bg-zinc-100/60 md:px-24">
+          <section id="blog" className="bg-zinc-950/20 px-4 py-32 light:bg-zinc-100/60 sm:px-10 md:px-24">
             <AnimatedSection delay={0.05} direction="up">
               <h2 className="mb-12 text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">Latest Insights</h2>
             </AnimatedSection>
@@ -241,20 +241,20 @@ export default async function Home() {
             </AnimatedSection>
           </section>
 
-          <footer id="contact" className="border-t border-zinc-900 px-10 py-32 text-center light:border-zinc-200 md:px-24">
+          <footer id="contact" className="border-t border-zinc-900 px-4 py-32 text-center light:border-zinc-200 sm:px-10 md:px-24">
             <div className="blob" style={{ bottom: "-10%", right: "-10%" }} />
             <AnimatedSection delay={0.05} direction="up">
               <h2 className="mb-12 text-5xl font-extrabold tracking-tighter md:text-8xl">LET'S CONNECT.</h2>
             </AnimatedSection>
             <AnimatedSection delay={0.1} direction="up">
-              <a href="mailto:bishow8848@gmail.com" className="inline-block border-b-2 border-zinc-800 pb-2 text-2xl italic font-light transition hover:border-white light:border-zinc-300 light:hover:border-zinc-700 md:text-4xl">
+              <a href="mailto:bishow8848@gmail.com" className="inline-block max-w-full break-all border-b-2 border-zinc-800 pb-2 text-2xl italic font-light transition hover:border-white light:border-zinc-300 light:hover:border-zinc-700 md:text-4xl">
                 bishow8848@gmail.com
               </a>
             </AnimatedSection>
 
             <div className="mt-32 rounded-2xl border border-zinc-900 bg-zinc-950/60 px-6 py-8 light:border-zinc-200 light:bg-white/80 md:px-10">
-              <div className="flex flex-col items-center justify-between text-[10px] uppercase tracking-[0.3em] text-zinc-600 md:flex-row">
-                <p>© 2026 BISHOW DEVKOTA — ALL RIGHTS RESERVED</p>
+              <div className="flex flex-col items-center justify-between text-[10px] uppercase tracking-[0.15em] text-zinc-400 light:text-zinc-600 md:flex-row md:tracking-[0.3em]">
+                <p className="break-words">© 2026 BISHOW DEVKOTA — ALL RIGHTS RESERVED</p>
                 <div className="mt-6 flex gap-8 md:mt-0">
                   <a href="#" className="transition hover:text-white light:hover:text-zinc-900">LinkedIn</a>
                   <a href="#" className="transition hover:text-white light:hover:text-zinc-900">GitHub</a>

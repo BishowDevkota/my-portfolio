@@ -7,8 +7,8 @@ type AnimationDirection = "up" | "down" | "left" | "right" | "fade";
 const directionVariants = {
   up: { opacity: 0, y: 50 },
   down: { opacity: 0, y: -50 },
-  left: { opacity: 0, x: 50 },
-  right: { opacity: 0, x: -50 },
+  left: { opacity: 0, x: 30 },
+  right: { opacity: 0, x: -30 },
   fade: { opacity: 0 },
 };
 
