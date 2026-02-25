@@ -46,9 +46,16 @@ export default async function Home() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.2} direction="up">
-                <div className="mt-12">
+                <div className="mt-12 flex flex-wrap items-center gap-4">
                   <a href="#projects" className="rounded-full bg-white px-8 py-4 text-sm font-bold text-black transition hover:scale-105">
                     VIEW PROJECTS
+                  </a>
+                  <a
+                    href="/resume.pdf"
+                    download
+                    className="rounded-full border border-white/40 bg-transparent px-8 py-4 text-sm font-bold text-white transition hover:scale-105 hover:border-white light:border-zinc-700 light:text-zinc-900 light:hover:border-zinc-900"
+                  >
+                    DOWNLOAD CV
                   </a>
                 </div>
               </AnimatedSection>
@@ -176,7 +183,7 @@ export default async function Home() {
                   <div className={`glass overflow-hidden rounded-[2rem] p-2 ${index % 2 === 1 ? "md:order-last" : ""}`}>
                     <img
                       src={project.imagePath}
-                      className="w-full rounded-[1.5rem] transition duration-700 hover:scale-105"
+                      className="h-80 w-full rounded-[1.5rem] object-cover transition duration-700 hover:scale-105 md:h-96"
                       alt={project.title}
                     />
                   </div>

@@ -75,8 +75,8 @@ export function Navbar() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 box-border w-full px-4 py-4 md:p-6">
-      <nav className="mx-auto flex w-full min-w-0 items-center justify-between rounded-2xl border border-white/15 bg-black/35 px-4 py-3 text-white backdrop-blur-xl light:border-zinc-300/70 light:bg-white/80 light:text-zinc-900 md:max-w-7xl md:rounded-none md:border-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-0 md:mix-blend-difference md:light:mix-blend-normal">
-        <Link href="/" className="inline-flex items-center">
+      <nav className="mx-auto flex w-full min-w-0 items-center justify-between rounded-2xl border border-white/15 bg-black/35 px-4 py-3 text-white backdrop-blur-xl light:border-zinc-300/70 light:bg-white/80 light:text-zinc-900 md:max-w-7xl md:rounded-none md:border-0 md:bg-transparent md:light:border-0 md:light:bg-transparent md:px-0 md:py-0 md:backdrop-blur-0 md:light:backdrop-blur-none md:light:shadow-none md:mix-blend-difference md:light:mix-blend-normal">
+        <Link href="/" className="inline-flex items-center rounded-md light:bg-black">
           <Image src="/logo.png" alt="Logo" width={44} height={44} priority className="h-11 w-11" />
         </Link>
 
@@ -148,7 +148,7 @@ export function Navbar() {
             <Link
               href="/"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center"
+              className="inline-flex items-center rounded-md light:bg-black"
             >
               <Image src="/logo.png" alt="Logo" width={40} height={40} className="h-10 w-10" />
             </Link>
