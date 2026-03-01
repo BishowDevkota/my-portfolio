@@ -69,7 +69,7 @@ export default async function Home() {
               <AnimatedSection className="md:col-span-1" delay={0.05} direction="left">
                 <div className="glass rounded-3xl p-2 rotate-3 transition duration-500 hover:rotate-0">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                    src="/me.jpeg"
                     className="h-auto w-full rounded-2xl grayscale transition duration-700 hover:grayscale-0"
                     alt="About Me"
                   />
